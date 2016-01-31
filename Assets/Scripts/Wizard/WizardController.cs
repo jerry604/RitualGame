@@ -106,7 +106,6 @@ public class WizardController : MonoBehaviour {
                 anim.Play("jumpLeft");
             }
         }
-    }
 
 		if (onLadder) {
 			rb2d.gravityScale = 0;
@@ -115,13 +114,24 @@ public class WizardController : MonoBehaviour {
 		} else {
 			rb2d.gravityScale = 5;
 		}
-			
     }
+		
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		if (other.gameObject.CompareTag ("Ladder")) {
 			onLadder = true;
+		}
+
+		if (other.gameObject.tag == "Skull" || 
+			other.gameObject.tag == "Coin" ||
+			other.gameObject.tag == "Bikini" ||
+			other.gameObject.tag == "Chalk" ||
+			other.gameObject.tag == "Candle" )
+		{
+			other.gameObject.SetActive (false);
+			objectTag = other.gameObject.tag;
+					count++;
 		}
 	}
 
