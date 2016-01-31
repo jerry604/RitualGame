@@ -143,9 +143,9 @@ public class WizardController : MonoBehaviour {
 		}
 
 		/// Death
-		if (other.gameObject.CompareTag ("Destroyer") || other.gameObject.CompareTag("Flame")) {
-			gameObject.transform.position = new Vector3(playerSpawn.x, playerSpawn.y, 1f);
-		}
+//		if (other.gameObject.CompareTag ("Destroyer") || other.gameObject.CompareTag("Flame")) {
+//			gameObject.transform.position = new Vector3(playerSpawn.x, playerSpawn.y, 1f);
+//		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
