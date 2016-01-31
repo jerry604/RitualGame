@@ -96,7 +96,7 @@ GameObject:
   - 33: {fileID: 99403061}
   - 23: {fileID: 99403060}
   - 61: {fileID: 99403059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

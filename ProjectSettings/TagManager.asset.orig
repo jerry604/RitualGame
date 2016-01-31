@@ -5,13 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Flame
-  - Ladder
+<<<<<<< HEAD
   - Bikini
   - Skull
   - Candle
   - Coin
   - Chalk
   - Hidden Coin
+||||||| merged common ancestors
+=======
+  - Ladder
+>>>>>>> 554e04fc8d8f17af038e86e25874b38458aee03f
   layers:
   - Default
   - TransparentFX

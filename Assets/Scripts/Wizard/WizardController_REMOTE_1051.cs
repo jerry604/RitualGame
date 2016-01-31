@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class WizardController : MonoBehaviour {
@@ -21,12 +21,6 @@ public class WizardController : MonoBehaviour {
     private bool grounded = false;
 	private Rigidbody2D rb2d;
     private Animator anim;
-	private int count ;
-	private string objectTag;
-
-	public string getTagName(){
-		return objectTag;
-	}
 
     void Awake ()
     {
@@ -106,7 +100,6 @@ public class WizardController : MonoBehaviour {
                 anim.Play("jumpLeft");
             }
         }
-    }
 
 		if (onLadder) {
 			rb2d.gravityScale = 0;
@@ -131,10 +124,4 @@ public class WizardController : MonoBehaviour {
 			onLadder = false;
 		}
 	}
-
-	void OnGUI()
-	{
-		GUILayout.Label( "Item Picked Up: " + objectTag);
-	}
 }
-

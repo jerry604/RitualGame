@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class WizardController : MonoBehaviour {
@@ -106,7 +106,10 @@ public class WizardController : MonoBehaviour {
                 anim.Play("jumpLeft");
             }
         }
-    }
+<<<<<<< HEAD
+||||||| merged common ancestors
+
+=======
 
 		if (onLadder) {
 			rb2d.gravityScale = 0;
@@ -116,7 +119,30 @@ public class WizardController : MonoBehaviour {
 			rb2d.gravityScale = 5;
 		}
 			
+>>>>>>> 554e04fc8d8f17af038e86e25874b38458aee03f
     }
+<<<<<<< HEAD
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{		
+		if (other.gameObject.tag == "Skull" || 
+			other.gameObject.tag == "Coin" ||
+			other.gameObject.tag == "Bikini" ||
+			other.gameObject.tag == "Chalk" ||
+			other.gameObject.tag == "Candle" )
+		{
+			other.gameObject.SetActive (false);
+			objectTag = other.gameObject.tag;
+					count++;
+		}
+	}
+
+	void OnGUI()
+	{
+		GUILayout.Label( "Item Picked Up: " + objectTag);
+	}
+||||||| merged common ancestors
+=======
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
@@ -131,10 +157,6 @@ public class WizardController : MonoBehaviour {
 			onLadder = false;
 		}
 	}
-
-	void OnGUI()
-	{
-		GUILayout.Label( "Item Picked Up: " + objectTag);
-	}
+>>>>>>> 554e04fc8d8f17af038e86e25874b38458aee03f
 }
 
