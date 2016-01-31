@@ -1,22 +1,11 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: fee0c138aec5b4b79a245cf10d4b90ea
-TextureImporter:
-  serializedVersion: 2
-  mipmaps:
-    mipMapMode: 0
-    enableMipMap: 0
-=======
-guid: 771eec8008ab3a444aa25d29adbc586c
-timeCreated: 1454203585
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,53 +15,32 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-<<<<<<< HEAD
-    heightScale: .25
-=======
     heightScale: 0.25
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
-<<<<<<< HEAD
-  seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
-=======
   cubemapConvolution: 0
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-<<<<<<< HEAD
-    wrapMode: -1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-=======
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-<<<<<<< HEAD
-  spritePivot: {x: .5, y: .5}
-=======
   spritePivot: {x: 0.5, y: 0.5}
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -80,13 +48,8 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
-<<<<<<< HEAD
-  spritePackingTag: 
-  userData: 
-=======
     outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 
->>>>>>> fa700c74dd4a9a3776d532a36fed958662490021

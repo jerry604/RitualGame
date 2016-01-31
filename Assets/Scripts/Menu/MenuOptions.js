@@ -6,15 +6,15 @@ public var isAbout = false;
 public var isMenu = false;
 
 function Start () {
-	renderer.material.color = Color.white;
+	GetComponent.<Renderer>().material.color = Color.white;
 }
 
 function OnMouseEnter () {
-	renderer.material.color = Color.red;
+	GetComponent.<Renderer>().material.color = Color.red;
 }
 
 function OnMouseExit () {
-	renderer.material.color = Color.white;
+	GetComponent.<Renderer>().material.color = Color.white;
 }
 
 function OnMouseUp () {

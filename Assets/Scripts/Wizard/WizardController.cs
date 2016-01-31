@@ -6,12 +6,16 @@ public class WizardController : MonoBehaviour {
 	[HideInInspector] public bool facingRight = true;
 	[HideInInspector] public bool jump = true;
 
+    public float wizardX;
+    public float wizardY;
 	public float moveForce = 30f;
 	public float maxSpeed = 10f;
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
+    public float minCameraX;
+    public float maxCameraX;
 
-	private bool grounded = false;
+    private bool grounded = false;
 	private Rigidbody2D rb2d;
     private Animator anim;
 
@@ -23,6 +27,9 @@ public class WizardController : MonoBehaviour {
 
 	void Update ()
 	{
+        wizardX = transform.position.x;
+        wizardY = transform.position.y;
+
 		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
 		if (Input.GetButtonDown ("Jump") && grounded) {
@@ -34,7 +41,7 @@ public class WizardController : MonoBehaviour {
 	{
 		float h = Input.GetAxis ("Horizontal");
 
-        if (Input.GetButton("Horizontal"))
+        if (Input.GetButton("Horizontal") && grounded)
         {
             if (h > 0)
             {
@@ -69,15 +76,26 @@ public class WizardController : MonoBehaviour {
 
         if( !Input.GetButton("Horizontal"))
         {
-            if (grounded)
+            if(grounded)
             {
                 rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             }
-            if ( rb2d.velocity.y == 0 )
+            if(rb2d.velocity.y == 0)
             {
                 anim.Play("idle");
             }
         }
+        if (!grounded)
+        {
+            if (h > 0)
+            {
+                anim.Play("jumpRight");
+            }
+            if (h < 0)
+            {
+                anim.Play("jumpLeft");
+            }
+        }
 
-	}
+    }
 }
