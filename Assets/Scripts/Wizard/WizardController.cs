@@ -16,9 +16,6 @@ public class WizardController : MonoBehaviour {
 
 	public Transform groundCheck;
 
-    public float minCameraX;
-    public float maxCameraX;
-
 	private bool onLadder = false;
     private bool grounded = false;
 	private Rigidbody2D rb2d;
@@ -27,10 +24,19 @@ public class WizardController : MonoBehaviour {
 	private int count = 0;
 	private string objectTag = "";
 
+	public AudioSource success;
+	public AudioSource fail;
+	public AudioSource footstep;
+	public AudioSource ladder;
+
     void Awake ()
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D> ();
+		footstep.Play ();
+		footstep.Pause ();
+		ladder.Play ();
+		ladder.Pause ();
 	}
 
 	void Update ()
@@ -80,25 +86,42 @@ public class WizardController : MonoBehaviour {
                 anim.Play("idle");
             }
         }
-        if (!grounded)
-        {
-            if (h > 0)
-            {
-                anim.Play("jumpRight");
-            }
-            if (h < 0)
-            {
-                anim.Play("jumpLeft");
-            }
-        }
+		if (!grounded) {
+			footstep.Pause ();
+
+			if (h > 0) {
+				anim.Play ("jumpRight");
+			}
+			if (h < 0) {
+				anim.Play ("jumpLeft");
+			}
+		} else {
+			if (rb2d.velocity.x != 0) {
+				if (!footstep.isPlaying) {
+					footstep.UnPause ();
+				}
+			} else {
+				footstep.Pause ();		
+			}
+		}
 
 		if (onLadder) {
 			rb2d.gravityScale = 0;
 			rb2d.velocity = new Vector2 (h * maxSpeed, v * maxSpeed);
 			jump = false;
+
+			if (rb2d.velocity.y != 0) {
+				if (!ladder.isPlaying) {
+					ladder.UnPause ();
+				}
+			} else {
+				ladder.Pause ();		
+			}
 		} else {
 			rb2d.gravityScale = 10;
 		}
+
+
 			
     }
 
