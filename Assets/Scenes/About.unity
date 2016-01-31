@@ -169,6 +169,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 278089817}
   - 212: {fileID: 278089816}
+  - 95: {fileID: 278089818}
   m_Layer: 0
   m_Name: Person1
   m_TagString: Untagged
@@ -210,6 +211,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!95 &278089818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278089815}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!1 &442733925
 GameObject:
   m_ObjectHideFlags: 0
