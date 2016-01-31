@@ -51,33 +51,19 @@ public class WizardController : MonoBehaviour {
         if (Input.GetButton("Horizontal") && grounded)
         {
             if (h > 0)
-            {
+			{
                 anim.Play("walkRight");
             }
             if( h < 0 )
-            {
+			{
                 anim.Play("walkLeft");
             }
-        }
-        
-
-        if (h * rb2d.velocity.x < maxSpeed) {
-			rb2d.AddForce (Vector2.right * h * moveForce);
-		} 
-
-		if (Mathf.Abs (rb2d.velocity.x) > maxSpeed) {
-			rb2d.velocity = new Vector2 (Mathf.Sign (rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
 		}
 
+		rb2d.velocity = new Vector2 (h * maxSpeed, rb2d.velocity.y);
+        
 		if (jump) {
 			rb2d.AddForce(new Vector2(0f, jumpForce));
-            /* Apply motion */
-            //Vector2 _velocity = rb2d.velocity;
-            //Vector2 target = new Vector2(0, 5);
-            //Vector2 _velocityChange = ( target - _velocity);
-
-            /* Move rigidbody */
-            //rb2d.AddForce(_velocityChange, ForceMode.VelocityChange);
             jump = false;
 		}
 
@@ -109,7 +95,7 @@ public class WizardController : MonoBehaviour {
 			rb2d.velocity = new Vector2 (h * maxSpeed, v * maxSpeed);
 			jump = false;
 		} else {
-			rb2d.gravityScale = 5;
+			rb2d.gravityScale = 10;
 		}
 			
     }
