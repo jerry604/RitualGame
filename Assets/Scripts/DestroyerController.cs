@@ -6,6 +6,8 @@ public class DestroyerController : MonoBehaviour {
 	// Use this for initialization
 	public Vector2 playerSpawn;
 
+	public float flameYPos;
+
 	void Start () {
 	
 	}
@@ -19,7 +21,8 @@ public class DestroyerController : MonoBehaviour {
 
 		if (other.gameObject.CompareTag ("Flame")) {
 			float xPos = other.gameObject.transform.position.x;
-			other.gameObject.transform.position = new Vector3 (xPos, 6.5f, 1f);
+			float zPos = other.gameObject.transform.position.z;
+			other.gameObject.transform.position = new Vector3 (xPos, flameYPos, zPos);
 		}
 	
 	}
