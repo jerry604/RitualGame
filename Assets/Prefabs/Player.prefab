@@ -152,7 +152,7 @@ MonoBehaviour:
   jump: 0
   moveForce: 30
   maxSpeed: 5
-  jumpForce: 200
+  jumpForce: 300
   groundCheck: {fileID: 465920}
 --- !u!212 &21213594
 SpriteRenderer:
@@ -220,7 +220,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: jumpForce
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 186068}
