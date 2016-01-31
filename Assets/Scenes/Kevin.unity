@@ -792,9 +792,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1562294752}
   - 212: {fileID: 1562294751}
+  - 61: {fileID: 1562294753}
   m_Layer: 0
   m_Name: background
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,6 +842,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!61 &1562294753
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562294750}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 15.9, y: -0.8}
+  serializedVersion: 2
+  m_Size: {x: 8.6, y: 12.88}
 --- !u!1 &1587616308
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +963,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11451596, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
       propertyPath: maxSpeed
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 11451596, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
       propertyPath: minCameraX
@@ -957,6 +972,14 @@ Prefab:
     - target: {fileID: 11451596, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
       propertyPath: maxCameraX
       value: 19.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095730, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
+      propertyPath: m_GravityScale
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451596, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
+      propertyPath: jumpForce
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d280159d86466b43876ff620cf857a2, type: 2}

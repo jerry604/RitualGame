@@ -11,10 +11,13 @@ public class WizardController : MonoBehaviour {
 	public float moveForce = 30f;
 	public float maxSpeed = 10f;
 	public float jumpForce = 1000f;
+
 	public Transform groundCheck;
+
     public float minCameraX;
     public float maxCameraX;
 
+	private bool onLadder = false;
     private bool grounded = false;
 	private Rigidbody2D rb2d;
     private Animator anim;
@@ -40,6 +43,7 @@ public class WizardController : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		float h = Input.GetAxis ("Horizontal");
+		float v = Input.GetAxis ("Vertical");
 
         if (Input.GetButton("Horizontal") && grounded)
         {
@@ -97,5 +101,27 @@ public class WizardController : MonoBehaviour {
             }
         }
 
+		if (onLadder) {
+			rb2d.gravityScale = 0;
+			rb2d.velocity = new Vector2 (h * maxSpeed, v * maxSpeed);
+			jump = false;
+		} else {
+			rb2d.gravityScale = 5;
+		}
+			
     }
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{
+		if (other.gameObject.CompareTag ("Ladder")) {
+			onLadder = true;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.gameObject.CompareTag ("Ladder")) {
+			onLadder = false;
+		}
+	}
 }
