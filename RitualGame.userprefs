@@ -1,13 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Wizard/WizardDrop.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Wizard/WizardController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Wizard/WizardDrop.cs" Line="9" Column="4" NotebookId="1" />
+      <File FileName="Assets/Scripts/Wizard/WizardController.cs" Line="3" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Menu/MenuOptions.js" Line="5" Column="27" NotebookId="1" />
+      <File FileName="Assets/Scripts/Item/ItemActiveandNot.cs" Line="3" Column="1" NotebookId="1" />
     </Files>
     <FloatingWindows>
-      <FloatingWindow WindowId="1" X="36" Y="56" Width="1138" Height="480">
+      <FloatingWindow WindowId="1" X="0" Y="23" Width="640" Height="480">
         <Files>
-          <File FileName="Assets/Scripts/Wizard/WizardController.cs" Line="32" Column="3" />
+          <File FileName="Assets/Scripts/Wizard/WizardDrop.cs" Line="27" Column="5" />
         </Files>
       </FloatingWindow>
     </FloatingWindows>

@@ -10,6 +10,7 @@ TagManager:
   - Candle
   - Coin
   - Chalk
+  - Hidden Coin
   layers:
   - Default
   - TransparentFX

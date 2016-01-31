@@ -1,4 +1,5 @@
-﻿#pragma strict
+﻿/*
+#pragma strict
 
 public var isQuit = false;
 public var isMain = false;
@@ -30,4 +31,4 @@ function OnMouseUp () {
 	else if (isMenu == true) {
 		Application.LoadLevel("Menu");
 	}
-}
+}*/

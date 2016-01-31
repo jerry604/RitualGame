@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class WizardDrop : MonoBehaviour {
@@ -24,6 +24,7 @@ public class WizardDrop : MonoBehaviour {
 			/*
 			//Basic Clean Up, set the Bullets to self destruct after 10 Seconds, I am being VERY generous here, normally 3 seconds is plenty.
 			Destroy(Temporary_Bullet_Handler, 10.0f);*/
-		}
+		/*}
 	}
 }
+*/

@@ -1,6 +1,9 @@
 fileFormatVersion: 2
 guid: 02996bbd522d24eb88956e8155bc7bf0
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: white-hood-character_0
+    21300002: white-hood-character_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -14,11 +17,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -29,12 +35,14 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -50,8 +58,35 @@ TextureImporter:
         width: 220
         height: 438
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108, y: -192}
+        - {x: 63, y: 0}
+        - {x: 93, y: 53}
+        - {x: 96, y: 61}
+        - {x: 95, y: 89}
+        - {x: 87, y: 114}
+        - {x: 77, y: 141}
+        - {x: 77, y: 161}
+        - {x: 61, y: 190}
+        - {x: 54, y: 197}
+        - {x: 20, y: 211}
+        - {x: 13, y: 208}
+        - {x: -1, y: 219}
+        - {x: -9, y: 219}
+        - {x: -48, y: 180}
+        - {x: -72, y: 153}
+        - {x: -97, y: 108}
+        - {x: -103, y: 84}
+        - {x: -102, y: 59}
+        - {x: -91, y: 37}
+        - {x: -64, y: -5}
+        - {x: -62, y: -12}
+        - {x: -110, y: -206}
+        - {x: -110, y: -219}
+        - {x: 110, y: -219}
+        - {x: 110, y: -206}
     - name: white-hood-character_1
       rect:
         serializedVersion: 2
@@ -60,7 +95,37 @@ TextureImporter:
         width: 220
         height: 438
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: -146}
+        - {x: 70, y: -32}
+        - {x: 62, y: -1}
+        - {x: 75, y: 19}
+        - {x: 96, y: 58}
+        - {x: 95, y: 86}
+        - {x: 87, y: 111}
+        - {x: 77, y: 137}
+        - {x: 77, y: 158}
+        - {x: 61, y: 185}
+        - {x: 54, y: 193}
+        - {x: 20, y: 205}
+        - {x: -1, y: 215}
+        - {x: -7, y: 215}
+        - {x: -52, y: 171}
+        - {x: -72, y: 147}
+        - {x: -85, y: 127}
+        - {x: -100, y: 96}
+        - {x: -103, y: 80}
+        - {x: -100, y: 47}
+        - {x: -62, y: -9}
+        - {x: -110, y: -205}
+        - {x: -110, y: -219}
+        - {x: 110, y: -219}
+        - {x: 110, y: -202}
+        - {x: 107, y: -192}
+    outline: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

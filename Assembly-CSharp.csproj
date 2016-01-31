@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DestroyerController.cs" />
+     <Compile Include="Assets\Scripts\Item\ItemActiveandNot.cs" />
      <Compile Include="Assets\Scripts\ShootingFlameController.cs" />
      <Compile Include="Assets\Scripts\Wizard\WizardController.cs" />
      <Compile Include="Assets\Scripts\Wizard\WizardDrop.cs" />
