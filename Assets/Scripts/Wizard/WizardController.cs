@@ -24,10 +24,11 @@ public class WizardController : MonoBehaviour {
 	private int count = 0;
 	private string objectTag = "";
 
-	public AudioSource success;
-	public AudioSource fail;
 	public AudioSource footstep;
 	public AudioSource ladder;
+
+	public AudioSource RoomMusic;
+	public AudioSource DungeonMusic;
 
     void Awake ()
     {
@@ -37,6 +38,10 @@ public class WizardController : MonoBehaviour {
 		footstep.Pause ();
 		ladder.Play ();
 		ladder.Pause ();
+		RoomMusic.Play ();
+		RoomMusic.Pause ();
+		DungeonMusic.Play ();
+		DungeonMusic.Pause ();
 	}
 
 	void Update ()
@@ -121,7 +126,40 @@ public class WizardController : MonoBehaviour {
 			rb2d.gravityScale = 10;
 		}
 
+		/// MUSIC
+		if (transform.position.y >= -20) {
+			if (!RoomMusic.isPlaying) {
+				RoomMusic.volume = 0;
+				RoomMusic.UnPause ();
+			} else {
+				if (RoomMusic.volume < 1){
+					RoomMusic.volume += 0.01f;
+				}
+			}
+		} else {
+			if (RoomMusic.volume > 0) {
+				RoomMusic.volume -= 0.01f;
+			} else {
+				RoomMusic.Pause ();
+			}
+		}
 
+		if (transform.position.y < -20) {
+			if (!DungeonMusic.isPlaying) {
+				DungeonMusic.volume = 0;
+				DungeonMusic.UnPause ();
+			} else {
+				if (DungeonMusic.volume < 1){
+					DungeonMusic.volume += 0.01f;
+				}
+			}
+		} else {
+			if (DungeonMusic.volume > 0) {
+				DungeonMusic.volume -= 0.01f;
+			} else {
+				DungeonMusic.Pause ();
+			}
+		}
 			
     }
 
