@@ -1,0 +1,17 @@
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/UnityEngine.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/UnityEditor.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Mono.Cecil.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Unity.DataContract.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/jimmylin/Documents/Jam/RitualGame/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/jimmylin/Documents/Jam/RitualGame/obj/Debug/Assembly-CSharp.dll
+/Users/jimmylin/Documents/Jam/RitualGame/obj/Debug/Assembly-CSharp.dll.mdb

@@ -25,6 +25,11 @@ public class WizardController : MonoBehaviour {
 	private int count = 0;
 	private string objectTag = "";
 
+	public AudioSource success;
+	public AudioSource fail;
+	public AudioSource footstep;
+	public AudioSource ladder;
+
     void Awake ()
     {
         anim = GetComponent<Animator>();
@@ -96,6 +101,20 @@ public class WizardController : MonoBehaviour {
 			jump = false;
 		} else {
 			rb2d.gravityScale = 10;
+		}
+
+		if (rb2d.velocity.x!=0) {
+			if(!footstep.isPlaying)
+				footstep.Play ();
+		} else {
+			footstep.Pause ();
+		}
+
+		if (rb2d.velocity.y!=0 && onLadder) {
+			if (!ladder.isPlaying)
+				ladder.Play ();
+		} else {
+			ladder.Pause ();
 		}
 			
     }
