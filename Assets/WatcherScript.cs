@@ -63,17 +63,17 @@ public class WatcherScript : MonoBehaviour {
                 }
                 else if (state == "needCoin")
                 {
-                    coin.transform.position = new Vector3(coin.transform.position.x, coin.transform.position.y, 0);
+                    coin.transform.position = new Vector3(coin.transform.position.x, coin.transform.position.y, -1);
                     state = "needSkull";
                 }
                 else if (state == "needSkull")
                 {
-                    skull.transform.position = new Vector3(skull.transform.position.x, skull.transform.position.y, 0);
+                    skull.transform.position = new Vector3(skull.transform.position.x, skull.transform.position.y, -1);
                     state = "needSacredVestments";
                 }
                 else if (state == "needSacredVestments")
                 {
-                    sacredVestments.transform.position = new Vector3(sacredVestments.transform.position.x, sacredVestments.transform.position.y, 0);
+                    sacredVestments.transform.position = new Vector3(sacredVestments.transform.position.x, sacredVestments.transform.position.y, -1);
                     state = "lightCandle1";
                 }
                 else if (state == "lightCandle1")
