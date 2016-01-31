@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ShootingFlameController.cs" />
     <Compile Include="Assets\Scripts\Wizard\WizardController.cs" />
     <Compile Include="Assets\Scripts\cameraFollowing.cs" />
+    <Compile Include="Assets\WatcherScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

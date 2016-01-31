@@ -8,11 +8,9 @@ public class cameraFollowing : MonoBehaviour
     void Update()
     {
         Vector3 newPos = new Vector3(System.Math.Min(System.Math.Max(target.wizardX, target.minCameraX), target.maxCameraX), transform.position.y, transform.position.z);
-        print(newPos);
         transform.position = Vector3.Lerp(
             transform.position, newPos,
             Time.deltaTime * smooth);
-        print(newPos);
     }
 
 }

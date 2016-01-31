@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 75c9e8a4fa84a3f4498773433997a20e
+timeCreated: 1454227136
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: magic-star_0
+    21300002: magic-star_1
+    21300004: magic-star_2
+    21300006: magic-star_3
+    21300008: magic-star_4
+    21300010: magic-star_5
+    21300012: magic-star_6
+    21300014: magic-star_7
+    21300016: magic-star_8
+    21300018: magic-star_9
+    21300020: magic-star_10
+    21300022: magic-star_11
+    21300024: magic-star_12
+    21300026: magic-star_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: magic-star_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.379997, y: 67.5}
+        - {x: -63.379997, y: 48.5}
+        - {x: -67.38, y: 37.5}
+        - {x: -67.38, y: -37.5}
+        - {x: -40.379997, y: -68.5}
+        - {x: 40.620003, y: -68.5}
+        - {x: 67.62, y: -29.5}
+        - {x: 67.62, y: 50.5}
+        - {x: 30.620003, y: 67.5}
+    - name: magic-star_1
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 394
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66.116, y: 68.5}
+        - {x: -67.116, y: 63.5}
+        - {x: -67.116, y: -55.5}
+        - {x: -35.115997, y: -68.5}
+        - {x: 49.884003, y: -68.5}
+        - {x: 67.884, y: -31.5}
+        - {x: 67.884, y: 45.5}
+        - {x: 42.884003, y: 68.5}
+    - name: magic-star_2
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 394
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.854675, y: 68.5}
+        - {x: -48.145325, y: 68.5}
+        - {x: -67.145325, y: 54.5}
+        - {x: -67.145325, y: -68.5}
+        - {x: 67.854675, y: -68.5}
+        - {x: 67.854675, y: 46.5}
+        - {x: 62.854675, y: 66.5}
+    - name: magic-star_3
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.19867, y: 68.5}
+        - {x: -67.19867, y: 43.5}
+        - {x: -67.19867, y: -57.5}
+        - {x: -46.19867, y: -68.5}
+        - {x: 46.80133, y: -68.5}
+        - {x: 67.80133, y: -47.5}
+        - {x: 67.80133, y: 35.5}
+        - {x: 54.80133, y: 68.5}
+    - name: magic-star_4
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67.22803, y: 68.5}
+        - {x: -67.22803, y: -67.5}
+        - {x: -64.22803, y: -68.5}
+        - {x: 40.771973, y: -68.5}
+        - {x: 67.77197, y: -60.5}
+        - {x: 67.77197, y: 41.5}
+        - {x: 50.771973, y: 68.5}
+    - name: magic-star_5
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1
+        width: 394
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.28131, y: 68.84133}
+        - {x: -67.28131, y: 41.84133}
+        - {x: -67.28131, y: -39.15867}
+        - {x: -50.28131, y: -68.15867}
+        - {x: 67.71869, y: -68.15867}
+        - {x: 67.71869, y: 67.84133}
+        - {x: 65.71869, y: 68.84133}
+    - name: magic-star_6
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 1
+        width: 394
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.176025, y: 68.84133}
+        - {x: -54.176025, y: 58.84133}
+        - {x: -67.176025, y: 42.84133}
+        - {x: -67.176025, y: -39.15867}
+        - {x: -66.176025, y: -46.15867}
+        - {x: -45.176025, y: -68.15867}
+        - {x: 37.823975, y: -68.15867}
+        - {x: 68.823975, y: -51.15867}
+        - {x: 68.823975, y: 43.84133}
+        - {x: 38.823975, y: 68.84133}
+    - name: magic-star_7
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1
+        width: 394
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.22937, y: 68.84133}
+        - {x: -67.22937, y: 34.84133}
+        - {x: -67.22937, y: -68.15867}
+        - {x: 60.77063, y: -68.15867}
+        - {x: 68.77063, y: -45.15867}
+        - {x: 68.77063, y: 41.84133}
+        - {x: 42.77063, y: 68.84133}
+    - name: magic-star_8
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.052002, y: 68.5}
+        - {x: -67.052, y: 54.5}
+        - {x: -67.052, y: -45.5}
+        - {x: -53.052002, y: -68.5}
+        - {x: 67.948, y: -68.5}
+        - {x: 67.948, y: 67.5}
+        - {x: 64.948, y: 68.5}
+    - name: magic-star_9
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.23999, y: 68.5}
+        - {x: -67.23999, y: 45.5}
+        - {x: -67.23999, y: -43.5}
+        - {x: -65.23999, y: -51.5}
+        - {x: -29.23999, y: -68.5}
+        - {x: 25.76001, y: -68.5}
+        - {x: 46.76001, y: -63.5}
+        - {x: 68.76001, y: -29.5}
+        - {x: 68.76001, y: 54.5}
+        - {x: 36.76001, y: 68.5}
+    - name: magic-star_10
+      rect:
+        serializedVersion: 2
+        x: 4135
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.08667, y: 68.5}
+        - {x: -67.08667, y: 62.5}
+        - {x: -67.08667, y: -62.5}
+        - {x: -54.08667, y: -68.5}
+        - {x: 25.91333, y: -68.5}
+        - {x: 60.91333, y: -56.5}
+        - {x: 67.91333, y: -48.5}
+        - {x: 67.91333, y: 45.5}
+        - {x: 52.91333, y: 68.5}
+    - name: magic-star_11
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 0
+        width: 394
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.27466, y: 68.5}
+        - {x: -67.27466, y: 42.5}
+        - {x: -67.27466, y: -64.5}
+        - {x: -50.27466, y: -68.5}
+        - {x: 62.72534, y: -68.5}
+        - {x: 68.72534, y: -58.5}
+        - {x: 68.72534, y: 68.5}
+    - name: magic-star_12
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 2
+        width: 394
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.073364, y: 69.18266}
+        - {x: -67.073364, y: 42.182663}
+        - {x: -67.073364, y: -64.81734}
+        - {x: -63.073364, y: -67.81734}
+        - {x: 37.926636, y: -67.81734}
+        - {x: 67.926636, y: -44.817337}
+        - {x: 67.926636, y: 39.182663}
+        - {x: 34.926636, y: 69.18266}
+    - name: magic-star_13
+      rect:
+        serializedVersion: 2
+        x: 5387
+        y: 2
+        width: 394
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.237305, y: 69.18266}
+        - {x: -67.237305, y: 49.182663}
+        - {x: -67.237305, y: -55.817337}
+        - {x: -54.237305, y: -67.81734}
+        - {x: 47.762695, y: -67.81734}
+        - {x: 68.762695, y: -34.817337}
+        - {x: 68.762695, y: 53.182663}
+        - {x: 36.762695, y: 69.18266}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
