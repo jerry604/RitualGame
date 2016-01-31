@@ -22,6 +22,9 @@ public class WizardController : MonoBehaviour {
 	private Rigidbody2D rb2d;
     private Animator anim;
 
+	private int count = 0;
+	private string objectTag = "";
+
     void Awake ()
     {
         anim = GetComponent<Animator>();
@@ -116,6 +119,17 @@ public class WizardController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Ladder")) {
 			onLadder = true;
 		}
+
+		if (other.gameObject.CompareTag ("Skull") ||
+		    other.gameObject.CompareTag ("Coin") ||
+		    other.gameObject.CompareTag ("Bikini") ||
+		    other.gameObject.CompareTag ("Chalk") ||
+		    other.gameObject.CompareTag ("Candle")) {
+
+			other.gameObject.SetActive (false);
+			objectTag = other.gameObject.tag;
+			count = count + 1;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
@@ -123,5 +137,15 @@ public class WizardController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Ladder")) {
 			onLadder = false;
 		}
+	}
+
+	public string getTagName() 
+	{
+		return objectTag;
+	}
+
+	void OnGUI()
+	{
+		GUILayout.Label ("Item Picked Up: " + objectTag);
 	}
 }
