@@ -18,6 +18,12 @@ public class WizardController : MonoBehaviour {
     private bool grounded = false;
 	private Rigidbody2D rb2d;
     private Animator anim;
+	private int count ;
+	private string objectTag;
+
+	public string getTagName(){
+		return objectTag;
+	}
 
     void Awake ()
     {
@@ -96,6 +102,25 @@ public class WizardController : MonoBehaviour {
                 anim.Play("jumpLeft");
             }
         }
-
     }
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{		
+		if (other.gameObject.tag == "Skull" || 
+			other.gameObject.tag == "Coin" ||
+			other.gameObject.tag == "Bikini" ||
+			other.gameObject.tag == "Chalk" ||
+			other.gameObject.tag == "Candle" )
+		{
+			other.gameObject.SetActive (false);
+			objectTag = other.gameObject.tag;
+					count++;
+		}
+	}
+
+	void OnGUI()
+	{
+		GUILayout.Label( "Item Picked Up: " + objectTag);
+	}
 }
+

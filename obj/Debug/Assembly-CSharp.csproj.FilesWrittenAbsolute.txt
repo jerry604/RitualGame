@@ -1,0 +1,17 @@
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/kenzhang/Desktop/RitualGame/obj/Debug/Assembly-CSharp.dll
+/Users/kenzhang/Desktop/RitualGame/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/UnityEngine.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/UnityEditor.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Mono.Cecil.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Unity.DataContract.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/kenzhang/Desktop/RitualGame/Temp/bin/Debug/Mono.Cecil.Mdb.dll

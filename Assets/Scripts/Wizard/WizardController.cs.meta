@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 0415b6d5d6ddd42a5aee8522a3e41c83
-timeCreated: 1454179866
+timeCreated: 1454225690
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - groundCheck: {instanceID: 0}
+  - wiz: {fileID: 186068, guid: 3d280159d86466b43876ff620cf857a2, type: 2}
+  - item: {fileID: 171112, guid: 4e192e3ebf9004c6586abb5b4646f8e2, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
