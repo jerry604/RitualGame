@@ -4,6 +4,8 @@ using System.Collections;
 public class DestroyerController : MonoBehaviour {
 
 	// Use this for initialization
+	public Vector2 playerSpawn;
+
 	void Start () {
 	
 	}
@@ -14,10 +16,6 @@ public class DestroyerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-
-		if (other.gameObject.CompareTag ("Player")) {
-			/// show game over
-		}
 
 		if (other.gameObject.CompareTag ("Flame")) {
 			float xPos = other.gameObject.transform.position.x;

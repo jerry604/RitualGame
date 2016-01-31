@@ -4,7 +4,6 @@ using System.Collections;
 public class ShootingFlameController : MonoBehaviour {
 
 	Rigidbody2D rb2d;
-
 	public float speed;
 
 	// Use this for initialization
@@ -20,4 +19,5 @@ public class ShootingFlameController : MonoBehaviour {
 	void FixedUpdate () {
 		rb2d.velocity = new Vector2 (0, speed);
 	}
+
 }
