@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Flame
   - Ladder
+  - Bikini
+  - Candle
+  - Chalk
+  - Skull
+  - Coin
   layers:
   - Default
   - TransparentFX
