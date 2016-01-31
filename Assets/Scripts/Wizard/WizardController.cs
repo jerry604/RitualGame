@@ -26,6 +26,12 @@ public class WizardController : MonoBehaviour {
 	private string objectTag = "";
 	private AudioSource[] audioFiles;
 
+	public Sprite iconHaveChalk;
+	public Sprite iconHaveCoin;
+	public Sprite iconHaveCandle;
+	public Sprite iconHaveSkull;
+	public Sprite iconHaveBikini;
+
 	public AudioSource footstep;
 	public AudioSource ladder;
 
@@ -209,6 +215,10 @@ public class WizardController : MonoBehaviour {
 		return objectTag;
 	}
 
+	public void removeTagName()
+	{
+		objectTag = "";
+	}
 	void OnGUI()
 	{
 		GUILayout.Label ("Item Picked Up: " + objectTag);
