@@ -6,6 +6,8 @@ public class WizardController : MonoBehaviour {
 	[HideInInspector] public bool facingRight = true;
 	[HideInInspector] public bool jump = true;
 
+	public Vector2 playerSpawn;
+
     public float wizardX;
     public float wizardY;
 	public float moveForce = 30f;
@@ -115,6 +117,11 @@ public class WizardController : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			objectTag = other.gameObject.tag;
 			count = count + 1;
+		}
+
+		/// Death
+		if (other.gameObject.CompareTag ("Destroyer") || other.gameObject.CompareTag("Flame")) {
+			gameObject.transform.position = new Vector3(playerSpawn.x, playerSpawn.y, 1f);
 		}
 	}
 
