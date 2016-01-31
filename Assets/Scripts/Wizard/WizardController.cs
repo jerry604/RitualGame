@@ -13,6 +13,7 @@ public class WizardController : MonoBehaviour {
 	public float moveForce = 30f;
 	public float maxSpeed = 10f;
 	public float jumpForce = 1000f;
+	public GameObject playerObject;
 
 	public Transform groundCheck;
 
@@ -23,12 +24,14 @@ public class WizardController : MonoBehaviour {
 
 	private int count = 0;
 	private string objectTag = "";
+	private AudioSource[] audioFiles;
 
 	public AudioSource footstep;
 	public AudioSource ladder;
 
 	public AudioSource RoomMusic;
 	public AudioSource DungeonMusic;
+
 
     void Awake ()
     {
@@ -42,6 +45,8 @@ public class WizardController : MonoBehaviour {
 		RoomMusic.Pause ();
 		DungeonMusic.Play ();
 		DungeonMusic.Pause ();
+		playerObject = GameObject.Find ("Player");
+		audioFiles = playerObject.GetComponents<AudioSource> ();
 	}
 
 	void Update ()
@@ -169,17 +174,23 @@ public class WizardController : MonoBehaviour {
 			onLadder = true;
 		}
 
-		if (other.gameObject.CompareTag ("Skull") ||
-		    other.gameObject.CompareTag ("Coin") ||
-		    other.gameObject.CompareTag ("Bikini") ||
-		    other.gameObject.CompareTag ("Chalk") ||
-		    other.gameObject.CompareTag ("Candle")) {
+		if (
+			other.gameObject.CompareTag ("Coin") ||
+			other.gameObject.CompareTag ("Bikini") ||
+			other.gameObject.CompareTag ("Chalk") ||
+			other.gameObject.CompareTag ("Candle")) {
 
+			audioFiles[1].Play ();
 			other.gameObject.SetActive (false);
 			objectTag = other.gameObject.tag;
-			count = count + 1;
 		}
 
+		if (other.gameObject.CompareTag ("Skull")) {
+			audioFiles[0].Play ();
+			other.gameObject.SetActive (false);
+			objectTag = other.gameObject.tag;
+		}
+			
 		/// Death
 		if (other.gameObject.CompareTag ("Destroyer") || other.gameObject.CompareTag("Flame")) {
 			gameObject.transform.position = new Vector3(playerSpawn.x, playerSpawn.y, 1f);
