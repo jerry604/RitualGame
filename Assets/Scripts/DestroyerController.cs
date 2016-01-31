@@ -4,6 +4,8 @@ using System.Collections;
 public class DestroyerController : MonoBehaviour {
 
 	// Use this for initialization
+	public Vector2 playerSpawn;
+
 	void Start () {
 	
 	}
@@ -17,6 +19,7 @@ public class DestroyerController : MonoBehaviour {
 
 		if (other.gameObject.CompareTag ("Player")) {
 			/// show game over
+			other.gameObject.transform.position = new Vector3(playerSpawn.x, playerSpawn.y, 1f);
 		}
 
 		if (other.gameObject.CompareTag ("Flame")) {
